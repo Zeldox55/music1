@@ -35,7 +35,7 @@ const YouTube = require('simple-youtube-api');
 const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
 const queue = new Map();
  
- 
+
  
 var prefix = "+" //البرفكس
 client.on('message', async msg => {
@@ -250,6 +250,14 @@ client.on("message", message => {
    });
  
  
+client.on("ready", () => {
+  const channel = client.channels.get("589073669268176916");
+  channel.join().then(connection => {
+    console.log("Successfully connected.");
+  })
+});
+
+
  
 const devs = ['411613098923786241' , '' , '' , ''];
 const adminprefix = "-";
