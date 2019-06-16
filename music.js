@@ -7,7 +7,7 @@ const fetchVideoInfo = require("youtube-info");
 const botversion = require('./package.json').version;
 const simpleytapi = require('simple-youtube-api')
 const youtube = new simpleytapi(YT_API_KEY);
-client.login(TOKEN);
+client.login(process.env.BOT_TOKEN);
 var guilds = {};
 
 /////////////////////////////////////////////////////////////////
