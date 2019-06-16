@@ -36,7 +36,7 @@
     "ms": "^2.1.1",
     "node-emoji": "^1.10.0",
     "node-gyp": "^3.8.0",
-    "node-opus": "^0.3.1",
+    "node-opus": "^0.3.2",
     "opusscript": "0.0.6",
     "pretty-ms": "^4.0.0",
     "python": "0.0.4",
