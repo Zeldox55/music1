@@ -1,9 +1,5 @@
 
-Untitled
- A GUEST   SEP 13TH, 2018   665   NEVER
 
-Not a member of Pastebin yet? Sign Up, it unlocks many cool features!
-rawdownloadreport JavaScript 12.47 KB
 const Discord = require('discord.js')
 const ytdl = require("ytdl-core");
 const { Client, Util } = require('discord.js');
@@ -31,10 +27,10 @@ client.on('ready', () => {
     client.user.setStatus("idle")
 });
 client.on('ready', () => {
-     client.user.setActivity("you",{type: 'WATCHING'});
+     client.user.setActivity("+1play | by Zeldox",{type: 'Streaming'});
  
 });
-const prefix = "$"
+const prefix = "+1"
 client.on('message', async msg => {
     if (msg.author.bot) return undefined;
     if (!msg.content.startsWith(prefix)) return undefined;
@@ -325,3 +321,4 @@ function play(guild, song) {
 })
 }
 });
+client.login(process.env.BOT_TOKEN);
