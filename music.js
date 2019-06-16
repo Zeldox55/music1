@@ -520,7 +520,7 @@ function isYoutube(str) {
 
 
 
-const devs = ['411613098923786241'];
+
 
 client.on('message', message => {
     let argresult = message.content.split(` `).slice(1).join(' ');
