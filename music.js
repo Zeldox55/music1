@@ -260,24 +260,24 @@ client.on("ready", () => {
 
  
 const devs = ['411613098923786241' , '' , '' , ''];
-const adminprefix = "-";
+const adminprefix = "+";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!devs.includes(message.author.id)) return;
      
-  if (message.content.startsWith(adminprefix + 'pla')) {
+  if (message.content.startsWith(adminprefix + 'playing')) {
     client.user.setGame(argresult);
       message.channel.sendMessage(`**:white_check_mark:   ${argresult}**`)
   } else
-  if (message.content.startsWith(adminprefix + 'wt')) {
+  if (message.content.startsWith(adminprefix + 'watching')) {
   client.user.setActivity(argresult, {type:'watching'});
       message.channel.sendMessage(`**:white_check_mark:   ${argresult}**`)
   } else
-  if (message.content.startsWith(adminprefix + 'ls')) {
+  if (message.content.startsWith(adminprefix + 'listing')) {
   client.user.setActivity(argresult , {type:'LISTENING'});
       message.channel.sendMessage(`**:white_check_mark:   ${argresult}**`)
   } else
-  if (message.content.startsWith(adminprefix + 'st')) {
+  if (message.content.startsWith(adminprefix + 'streaming')) {
     client.user.setGame(argresult, "https://www.twitch.tv/idk");
       message.channel.sendMessage(`**:white_check_mark:   ${argresult}**`)
   }
