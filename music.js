@@ -32,7 +32,7 @@ const { Client, Util } = require('discord.js');
 const getYoutubeID = require('get-youtube-id');
 const fetchVideoInfo = require('youtube-info');
 const YouTube = require('simple-youtube-api');
-const youtube = new YouTube("AIzaSyANHf40zkjHyGnd1Rjl3mckNKKitCGQDA0");
+const youtube = new YouTube("AIzaSyC-KosxyfZ9XnIU05ydBkPljD9TJyVsrvM");
 const queue = new Map();
  
  
