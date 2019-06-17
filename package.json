@@ -24,6 +24,7 @@
       "ffmpeg": "0.0.4",
       "ffmpeg-binaries": "^3.2.2-3",
       "fs": "0.0.2",
+      "youtube-api":"^2.0.10",
       "ms": "^2.1.1",
       "google-translate-api": "^2.3.0", 
       "opusscript": "0.0.6",
