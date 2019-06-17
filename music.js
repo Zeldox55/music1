@@ -568,12 +568,7 @@ function shuffle(queue) {
      const embed = new Discord.RichEmbed()
          .setColor("36393f")// By : n3k4a. || نعكشا
          .setDescription(`**
-───╔═══╦╗─╔╗─╔╗
-───║╔═╗║║─║║─║║
-╔═╗╚╝╔╝║║╔╣╚═╝╠══╗
-║╔╗╦╗╚╗║╚╝╩══╗║╔╗║
-║║║║╚═╝║╔╗╗──║║╔╗║
-╚╝╚╩═══╩╝╚╝──╚╩╝╚╝
+AR GAMER ✨ BOTS
 Bot Version : ${version}
 Developer By : <@349095859859881984>
 **`)
@@ -690,4 +685,4 @@ if (message.content.startsWith(initcmd + 'setavatar')) {// By : n3k4a. || نعك
 /*-------------------*/
 // By : n3k4a. || نعكشا
 
-bot.login(botSettings.token);
+bot.login(process.env.BOT_TOKEN);
